@@ -31,7 +31,7 @@ public class CardDeliveryTest {
         $("[data-test-id=city] input").setValue("Якутск");
         $("[data-test-id=date] input").sendKeys(formatter.format(newDate));
         $("[data-test-id=name] input").setValue("Иванов Иван");
-        $("[data-test-id=phone] input").setValue("+79246264555");
+        $("[data-test-id=phone] input").setValue("+79258135366");
         $("[data-test-id=agreement]").click();
         $(".button").click();
         $(withText("Успешно!")).shouldBe(Condition.visible, Duration.ofSeconds(15));
